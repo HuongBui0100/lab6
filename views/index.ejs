@@ -15,15 +15,7 @@
 <div class="container">
     <form action="/upload" method="post" enctype="multipart/form-data">
         <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">tenXe</label>
-            <input name="tenXe" type="text" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-        </div>
-        <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">giaXe</label>
-            <input name="giaXe" type="text" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-        </div>
-        <div class="mb-3">
-            <label for="formFileSm" class="form-label">tai file anh len</label>
+            <label for="formFileSm" class="form-label">tải file lên</label>
             <input class="form-control form-control-sm" id="formFileSm" type="file" name="image" multiple>
         </div>
         <div class="d-grid gap-2">
@@ -31,7 +23,7 @@
         </div>
     </form>
 </div>
-<div style="align-items: end" > <%= message %> </div>
+<div class="text-center" > <%= message %> </div>
 
 
 
