@@ -24,7 +24,9 @@
     </form>
 </div>
 <div class="text-center" > <%= message %> </div>
-
+<%for(var i=0; i<data.length; i++){%>
+    <img src="/<%= data[i].filename %>" alt="ko co anh" class="img-thumbnail" width="200" height="200">
+<%}%>
 
 
 <!-- Optional JavaScript; choose one of the two! -->

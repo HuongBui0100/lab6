@@ -10,7 +10,7 @@ var usersRouter = require('./routes/users');
 var app = express();
 
 const mongoose = require("mongoose");
-mongoose.connect("mongodb+srv://baonguyen:nguyenbao2002@cluster0.bgzly.mongodb.net/cars")
+mongoose.connect("mongodb+srv://buihuong:duyhau15@duan1.o5lxi.mongodb.net/test")
     .then(value => {console.log("value")})
     .catch(err => {console.log(err)})
 // view engine setup
@@ -29,6 +29,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname,'upload')))
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
